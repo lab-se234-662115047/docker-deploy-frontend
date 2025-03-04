@@ -1,0 +1,6 @@
+services:
+  frontend-new:
+    image: watcharapongwanna/234-deploylab-frontend-new:latest
+    pull_policy: always
+    ports:
+      - "9999:80"
