@@ -32,7 +32,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: timetitipon/234-deploylab-frontend-new:latest
+          tags: watcharapongwanna/234-deploylab-frontend-new:latest
 
       - name: Copy docker-compose file via SSH
         uses: appleboy/scp-action@v0.1.7
@@ -57,3 +57,4 @@ jobs:
             docker compose -f docker-compose-new.yml pull
             docker compose -f docker-compose-new.yml up -d
             rm -rf /home/ubuntu/frontend
+            # the new one
